@@ -1,10 +1,9 @@
 import streamlit as st
 import requests
 import pandas as pd
-import time
+import numpy as np  # <--- ESTA ES LA LÍNEA QUE FALTA
 import plotly.graph_objects as go
 from datetime import datetime
-
 # Configuración de página
 st.set_page_config(page_title="Radar de Valor Pro", layout="wide")
 

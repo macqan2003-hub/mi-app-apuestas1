@@ -23,9 +23,11 @@ edge_min = st.sidebar.slider("Ventaja mínima (Edge %):", 1, 15, 3) / 100
 # Selección de Liga
 ligas = {
     "La Liga (España)": "soccer_spain_la_liga",
+    "Segunda División (Esp)": "soccer_spain_segunda_division", # ¡Aquí hay más errores!
     "Premier League (UK)": "soccer_epl",
+    "Eredivisie (Holanda)": "soccer_netherlands_eredivisie",
     "NBA (USA)": "basketball_nba",
-    "Champions League": "soccer_uefa_champs_league"
+    "Brasil Serie A": "soccer_brazil_campeonato"
 }
 liga_seleccionada = st.sidebar.selectbox("Seleccionar Competición:", list(ligas.keys()))
 

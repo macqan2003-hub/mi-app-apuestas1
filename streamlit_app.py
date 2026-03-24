@@ -54,7 +54,7 @@ def buscar_oportunidades(key, liga_id):
             prob_h = (1/c_h) / margin
             edge = (c_h * prob_h) - 1
             
-            if edge > edge_min:
+            if edge > -0.99:
                 # Kelly 0.25
                 stake_eur = round(((c_h * prob_h - 1) / (c_h - 1)) * 0.25 * bankroll_inicial, 2)
                 output.append({
